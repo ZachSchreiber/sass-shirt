@@ -1,0 +1,127 @@
+p {
+  color: #A4D4FF;
+  margin-top: 0; }
+
+.all-shirts {
+  padding-right: 110px;
+  padding-left: -30px;
+  margin-left: 0; }
+
+.shirt-item {
+  float: right;
+  margin: 30px 10px 30px 10px;
+  width: 20%; }
+
+.shirt-menu {
+  border: 3px solid #A4D4FF; }
+
+.shirt-menu img {
+  left: 4px;
+  top: 15px;
+  padding: 10px;
+  position: relative;
+  width: 93%; }
+
+.refresh {
+  visibility: hidden;
+  color: #A4D4FF;
+  border-bottom: 3px solid #A4D4FF;
+  border-left: 3px solid #A4D4FF;
+  width: 15%;
+  padding: 5px;
+  position: relative;
+  bottom: 180px;
+  left: 170px; }
+
+.icons {
+  width: 100%;
+  color: #A4D4FF;
+  position: relative;
+  margin: 0; }
+
+.icons li {
+  width: 20%;
+  float: left;
+  list-style: none; }
+
+.arrows-container {
+  color: #A4D4FF;
+  border-left: 3px solid #A4D4FF;
+  border-bottom: 3px solid #A4D4FF;
+  border-right: 3px solid #A4D4FF;
+  padding: 4px 0 4px 11px; }
+
+.heart-container {
+  border-bottom: 3px solid #A4D4FF;
+  border-right: 3px solid #A4D4FF;
+  color: #A4D4FF;
+  padding: 4px 0 4px 11px; }
+
+.shirt-container {
+  border-bottom: 3px solid #A4D4FF;
+  border-right: 3px solid #A4D4FF;
+  color: #A4D4FF;
+  padding: 4px 2px 5px 10px; }
+
+.box-container {
+  border-bottom: 3px solid #A4D4FF;
+  border-right: 3px solid #A4D4FF;
+  color: #A4D4FF;
+  padding: 3px 0 5px 13px; }
+
+.cart-container {
+  border-bottom: 3px solid #A4D4FF;
+  border-right: 3px solid #A4D4FF;
+  color: #A4D4FF;
+  padding: 3px 0 5px 13px; }
+
+.box-container:hover, .cart-container:hover, .arrows-container:hover, .heart-container:hover, .shirt-container:hover {
+  color: #fff;
+  background-color: #A4D4FF; }
+
+.box-container:hover .boxes-container {
+  opacity: 1;
+  visibility: visible;
+  left: 0;
+  transform: translate(10px, 0px); }
+
+.info ul {
+  width: 100%; }
+
+.info ul :nth-child(1) {
+  float: left;
+  padding-top: 8px; }
+.info ul :nth-child(2) {
+  font-size: 25px;
+  position: relative;
+  float: right; }
+
+@media only screen and (max-width: 1100px) {
+  .shirt-item {
+    width: 30%; }
+
+  .all-shirts {
+    padding-left: 55px; } }
+@media only screen and (max-width: 900px) {
+  .shirt-item {
+    width: 45%; }
+
+  .all-shirts {
+    padding-right: 150px; } }
+@media only screen and (max-width: 700px) {
+  .shirt-item {
+    width: 80%; }
+
+  .all-shirts {
+    float: none;
+    margin-right: 130px;
+    padding-right: 0; } }
+@media only screen and (max-width: 550px) {
+  .shirt-item {
+    width: 80%; }
+
+  .all-shirts {
+    padding-right: 150px; } }
+/*# sourceMappingURL=sass-main.css.map */
+
+/*# sourceMappingURL=main.css.map */
