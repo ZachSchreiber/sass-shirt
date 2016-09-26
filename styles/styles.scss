@@ -3,18 +3,15 @@ $color: #A4D4FF;
 
 p {
     color: $color;
-    margin-top: 0;
 }
 
 .all-shirts {
-  padding-right: 110px;
-  padding-left: -30px;
-  margin-left: 0;
+  margin: auto;
 }
 
 .shirt-item {
   float: right;
-  margin: 30px 10px 30px 10px;
+  margin: 30px 10px;
   width: 20%;
 
 
@@ -65,7 +62,8 @@ p {
   border-left: $border;
   border-bottom: $border;
   border-right: $border;
-  padding: 4px 0 4px 11px;
+  text-align: center;
+  padding: 4px;
 
 }
 
@@ -73,28 +71,32 @@ p {
   border-bottom: $border;
   border-right: $border;
   color: $color;
-  padding: 4px 0 4px 11px;
+  text-align: center;
+  padding: 4px;
 }
 
 .shirt-container {
   border-bottom: $border;
   border-right: $border;
   color: $color;
-  padding: 4px 2px 5px 10px;
+  text-align: center;
+  padding: 4px;
 }
 
 .box-container {
   border-bottom: $border;
   border-right: $border;
   color: $color;
-  padding: 3px 0 5px 13px;
+  text-align: center;
+  padding: 4px;
 }
 
 .cart-container {
   border-bottom: $border;
   border-right: $border;
   color: $color;
-  padding: 3px 0 5px 13px;
+  text-align: center;
+  padding: 4px;
 }
 
 .box-container:hover, .cart-container:hover, .arrows-container:hover, .heart-container:hover, .shirt-container:hover {
@@ -157,7 +159,7 @@ p {
   }
   .all-shirts{
     float: none;
-  margin-right: 130px;
+  margin: auto;
   padding-right: 0;
 }
 }
