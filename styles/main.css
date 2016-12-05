@@ -1,81 +1,192 @@
-p {
-  color: #A4D4FF;
-  margin-top: 0; }
+@media only screen and (max-width: 809px) {
+  .shirt-item {
+    width: 300px;
+    margin: 10px 5px; }
 
+  .triangle-shirt {
+    left: 20px; }
+
+  .triangle-box {
+    left: 20px;
+    top: 58px; }
+
+  .hidden-list li {
+    margin: 5px 5px 6px 22px; }
+
+  .shirt-colors li {
+    height: 25px; } }
+@media only screen and (max-width: 639px) {
+  .shirt-item {
+    width: 325px; }
+
+  .triangle-shirt {
+    left: 22px; }
+
+  .triangle-box {
+    left: 24px; } }
 .all-shirts {
-  padding-right: 110px;
-  padding-left: -30px;
-  margin-left: 0; }
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
 
 .shirt-item {
-  float: right;
-  margin: 30px 10px 30px 10px;
-  width: 20%; }
+  margin: 30px 10px;
+  width: 250px;
+  position: relative; }
 
 .shirt-menu {
   border: 3px solid #A4D4FF; }
-
-.shirt-menu img {
-  left: 4px;
-  top: 15px;
-  padding: 10px;
-  position: relative;
-  width: 93%; }
+  .shirt-menu img {
+    padding-left: 4%;
+    padding-bottom: 6%;
+    width: 93%;
+    transform-style: preserve-3d;
+    transition: all 1.0s linear; }
+    .shirt-menu img:hover {
+      transform: rotatey(180deg); }
 
 .refresh {
-  visibility: hidden;
-  color: #A4D4FF;
-  border-bottom: 3px solid #A4D4FF;
   border-left: 3px solid #A4D4FF;
-  width: 15%;
-  padding: 5px;
+  border-bottom: 3px solid #A4D4FF;
   position: relative;
-  bottom: 180px;
-  left: 170px; }
+  color: #A4D4FF;
+  left: 89%;
+  bottom: 91%;
+  padding: 2%;
+  font-weight: bold;
+  font-size: 20px;
+  width: 12%; }
+  .refresh:hover {
+    background-color: #A4D4FF;
+    color: #fff; }
+    .refresh:hover:hover img {
+      transform: rotatey(180deg); }
 
 .icons {
   width: 100%;
   color: #A4D4FF;
   position: relative;
-  margin: 0; }
+  margin: 0;
+  border-bottom: 3px solid #A4D4FF;
+  height: 28px; }
+  .icons li {
+    width: 20%;
+    float: left;
+    list-style: none; }
 
-.icons li {
-  width: 20%;
-  float: left;
-  list-style: none; }
+.hidden-list {
+  background-color: #fff;
+  border: 3px solid #A4D4FF;
+  width: 21%;
+  bottom: 40px;
+  left: 39%;
+  position: absolute;
+  align-items: center;
+  opacity: 0;
+  z-index: -3;
+  color: #A4D4FF;
+  transition: .5s ease; }
+  .hidden-list li {
+    text-align: center;
+    float: none;
+    margin: 5px 5px 6px 14px; }
+
+.shirt-colors {
+  background-color: #fff;
+  border: 3px solid #A4D4FF;
+  width: 21%;
+  bottom: 40px;
+  left: 59%;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  z-index: -3;
+  opacity: 0;
+  color: #A4D4FF;
+  transition: .5s ease;
+  padding: 5px 5px 6px px; }
+  .shirt-colors li {
+    margin: 2px;
+    height: 20px;
+    width: 40%; }
+  .shirt-colors .blue {
+    background-color: #A4D4FF; }
+  .shirt-colors .pink {
+    background-color: #d583ac; }
+  .shirt-colors .yellow {
+    background-color: #deb17e; }
+  .shirt-colors .green {
+    background-color: #8bb992; }
+
+.triangle-shirt {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 8px 7.5px 0 7.5px;
+  border-color: #fff transparent transparent transparent;
+  position: absolute;
+  top: 92px;
+  left: 14px; }
+
+.triangle-box {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 8px 7.5px 0 7.5px;
+  border-color: #fff transparent transparent transparent;
+  position: absolute;
+  top: 47px;
+  left: 15px; }
 
 .arrows-container {
-  color: #A4D4FF;
   border-left: 3px solid #A4D4FF;
-  border-bottom: 3px solid #A4D4FF;
   border-right: 3px solid #A4D4FF;
-  padding: 4px 0 4px 11px; }
+  text-align: center;
+  padding: 5px;
+  color: #A4D4FF; }
 
 .heart-container {
-  border-bottom: 3px solid #A4D4FF;
   border-right: 3px solid #A4D4FF;
-  color: #A4D4FF;
-  padding: 4px 0 4px 11px; }
+  text-align: center;
+  padding: 5px;
+  color: #A4D4FF; }
+
+.shirt-container:hover .hidden-list {
+  z-index: 4;
+  opacity: 1;
+  transform: translate(0, 15px); }
 
 .shirt-container {
-  border-bottom: 3px solid #A4D4FF;
   border-right: 3px solid #A4D4FF;
   color: #A4D4FF;
-  padding: 4px 2px 5px 10px; }
+  text-align: center;
+  padding: 5px 5px 6px 5px; }
+  .shirt-container:hover {
+    color: #fff;
+    background-color: #A4D4FF; }
+
+.box-container:hover .shirt-colors {
+  z-index: 4;
+  opacity: 1;
+  transform: translate(0, 15px); }
 
 .box-container {
-  border-bottom: 3px solid #A4D4FF;
   border-right: 3px solid #A4D4FF;
-  color: #A4D4FF;
-  padding: 3px 0 5px 13px; }
+  text-align: center;
+  padding: 5px;
+  color: #A4D4FF; }
 
 .cart-container {
-  border-bottom: 3px solid #A4D4FF;
   border-right: 3px solid #A4D4FF;
-  color: #A4D4FF;
-  padding: 3px 0 5px 13px; }
+  text-align: center;
+  padding: 5px;
+  color: #A4D4FF; }
 
-.box-container:hover, .cart-container:hover, .arrows-container:hover, .heart-container:hover, .shirt-container:hover {
+.box-container:hover, .cart-container:hover, .arrows-container:hover, .heart-container:hover {
   color: #fff;
   background-color: #A4D4FF; }
 
@@ -86,42 +197,18 @@ p {
   transform: translate(10px, 0px); }
 
 .info ul {
-  width: 100%; }
+  width: 100%;
+  padding-left: 8px;
+  padding-right: 8px;
+  color: #A4D4FF; }
+  .info ul :nth-child(1) {
+    float: left;
+    padding-top: 8px; }
+  .info ul :nth-child(2) {
+    font-size: 25px;
+    position: relative;
+    float: right; }
 
-.info ul :nth-child(1) {
-  float: left;
-  padding-top: 8px; }
-.info ul :nth-child(2) {
-  font-size: 25px;
-  position: relative;
-  float: right; }
-
-@media only screen and (max-width: 1100px) {
-  .shirt-item {
-    width: 30%; }
-
-  .all-shirts {
-    padding-left: 55px; } }
-@media only screen and (max-width: 900px) {
-  .shirt-item {
-    width: 45%; }
-
-  .all-shirts {
-    padding-right: 150px; } }
-@media only screen and (max-width: 700px) {
-  .shirt-item {
-    width: 80%; }
-
-  .all-shirts {
-    float: none;
-    margin-right: 130px;
-    padding-right: 0; } }
-@media only screen and (max-width: 550px) {
-  .shirt-item {
-    width: 80%; }
-
-  .all-shirts {
-    padding-right: 150px; } }
 /*# sourceMappingURL=sass-main.css.map */
 
 /*# sourceMappingURL=main.css.map */

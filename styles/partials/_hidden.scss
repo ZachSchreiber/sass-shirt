@@ -1,0 +1,157 @@
+.icons {
+    width: 100%;
+    color: $color;
+    position: relative;
+    margin: 0;
+    border-bottom: $border;
+    height: 28px;
+
+li {
+    width: 20%;
+    float: left;
+    list-style: none;
+  }
+}
+
+.hidden-list {
+  background-color: #fff;
+  border: $border;
+  width: 21%;
+  bottom: 40px;
+  left: 39%;
+  position: absolute;
+  align-items: center;
+  opacity: 0;
+  z-index: -3;
+    color: $color;
+    transition: .5s ease;
+
+    li {
+      text-align: center;
+      float: none;
+      margin: 5px 5px 6px 14px;
+
+    }
+}
+
+.shirt-colors {
+  background-color: #fff;
+  border: $border;
+  width: 21%;
+  bottom: 40px;
+  left: 59%;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  z-index: -3;
+  opacity: 0;
+    color: $color;
+    transition: .5s ease;
+    padding: 5px 5px 6px px;
+
+    li {
+    margin: 2px;
+    height: 20px;
+    width: 40%;
+
+  }
+  .blue {
+    background-color: $color;
+  }
+  .pink {
+    background-color: #d583ac;
+  }
+  .yellow {
+    background-color: #deb17e;
+  }
+  .green {
+    background-color: #8bb992;
+  }
+}
+
+.triangle-shirt {
+width: 0;
+height: 0;
+border-style: solid;
+border-width: 8px 7.5px 0 7.5px;
+border-color: #fff transparent transparent transparent;
+position: absolute;
+top: 92px;
+left: 14px;
+}
+
+.triangle-box {
+width: 0;
+height: 0;
+border-style: solid;
+border-width: 8px 7.5px 0 7.5px;
+border-color: #fff transparent transparent transparent;
+position: absolute;
+top: 47px;
+left: 15px;
+}
+
+
+
+
+
+.arrows-container {
+  border-left: $border;
+  border-right: $border;
+  @include icon-position();
+}
+
+.heart-container {
+  border-right: $border;
+  @include icon-position();
+}
+.shirt-container:hover .hidden-list{
+  z-index: 4;
+  opacity: 1;
+  transform: translate(0, 15px);
+}
+
+.shirt-container {
+  border-right: $border;
+  color: $color;
+  text-align: center;
+  padding: 5px 5px 6px 5px;
+  &:hover {
+    color: #fff;
+    background-color: $color;
+  }
+}
+
+.box-container:hover .shirt-colors {
+  z-index: 4;
+  opacity: 1;
+  transform: translate(0, 15px);
+}
+
+.box-container {
+  border-right: $border;
+  @include icon-position();
+}
+
+.cart-container {
+  border-right: $border;
+  @include icon-position();
+}
+
+
+.box-container, .cart-container, .arrows-container, .heart-container, {
+  &:hover {
+    color: #fff;
+    background-color: $color;
+  }
+}
+
+ .box-container:hover .boxes-container {
+    opacity: 1;
+    visibility: visible;
+    left: 0;
+    transform: translate(10px, 0px);
+}

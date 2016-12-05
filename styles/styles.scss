@@ -1,122 +1,23 @@
 $border: 3px solid #A4D4FF;
 $color: #A4D4FF;
 
-p {
-    color: $color;
-}
-
-.all-shirts {
-  margin: auto;
-}
-
-.shirt-item {
-  float: right;
-  margin: 30px 10px;
-  width: 20%;
-
-
-}
-
-.shirt-menu {
-    border: $border;
-
-}
-
-.shirt-menu img {
-    left: 4px;
-    top: 15px;
-    padding: 10px;
-    position: relative;
-    width: 93%;
-}
-
-.refresh {
-    visibility: hidden;
-    color: $color;
-    border-bottom: $border;
-    border-left: $border;
-    width: 15%;
-    padding: 5px;
-    position: relative;
-    bottom: 180px;
-    left: 170px;
-}
-
-.icons {
-    width: 100%;
-    color: #A4D4FF;
-    position: relative;
-    margin: 0;
-}
-
-
-.icons li {
-    width: 20%;
-    float: left;
-    list-style: none;
-}
-
-
-.arrows-container {
-  color: $color;
-  border-left: $border;
-  border-bottom: $border;
-  border-right: $border;
+@mixin icon-position() {
   text-align: center;
-  padding: 4px;
-
-}
-
-.heart-container {
-  border-bottom: $border;
-  border-right: $border;
+  padding: 5px;
   color: $color;
-  text-align: center;
-  padding: 4px;
 }
 
-.shirt-container {
-  border-bottom: $border;
-  border-right: $border;
-  color: $color;
-  text-align: center;
-  padding: 4px;
-}
+@import "partials/media";
+@import "partials/top";
+@import "partials/hidden";
 
-.box-container {
-  border-bottom: $border;
-  border-right: $border;
-  color: $color;
-  text-align: center;
-  padding: 4px;
-}
-
-.cart-container {
-  border-bottom: $border;
-  border-right: $border;
-  color: $color;
-  text-align: center;
-  padding: 4px;
-}
-
-.box-container:hover, .cart-container:hover, .arrows-container:hover, .heart-container:hover, .shirt-container:hover {
-    color: #fff;
-    background-color: $color;
-}
-
- .box-container:hover .boxes-container {
-    opacity: 1;
-    visibility: visible;
-    left: 0;
-    transform: translate(10px, 0px);
-}
 
 
  .info ul{
      width: 100%;
-   }
-
-  .info ul {
+     padding-left: 8px;
+     padding-right: 8px;
+     color: $color;
 
   :nth-child(1) {
    float: left;
@@ -129,53 +30,6 @@ p {
     float: right;
 }
 }
-
-@media only screen and (max-width: 1100px) {
-
-
-  .shirt-item {
-    width: 30%;
-  }
-
-  .all-shirts {
-    padding-left: 55px;
-  }
-}
-
-@media only screen and (max-width: 900px) {
-
-  .shirt-item {
-    width: 45%;
-  }
-  .all-shirts{
-  padding-right: 150px;
-}
-}
-
-@media only screen and (max-width: 700px) {
-
-  .shirt-item {
-    width: 80%;
-  }
-  .all-shirts{
-    float: none;
-  margin: auto;
-  padding-right: 0;
-}
-}
-
-@media only screen and (max-width: 550px) {
-
-  .shirt-item {
-    width: 80%;
-  }
-  .all-shirts{
-  padding-right: 150px;
-}
-}
-
-
-
 
 
 

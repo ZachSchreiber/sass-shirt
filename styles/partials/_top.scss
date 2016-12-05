@@ -1,0 +1,51 @@
+.all-shirts {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.shirt-item {
+  margin: 30px 10px;
+  width: 250px;
+  position:relative;
+
+
+}
+
+.shirt-menu {
+    border: $border;
+
+img {
+    padding-left: 4%;
+    padding-bottom: 6%;
+    width: 93%;
+    transform-style: preserve-3d;
+    transition: all 1.0s linear;
+    &:hover {
+      transform: rotatey(180deg);
+
+    }
+}
+}
+
+.refresh {
+  border-left: $border;
+  border-bottom: $border;
+  position: relative;
+  color: $color;
+  left: 89%;
+  bottom: 91%;
+  padding: 2%;
+   font-weight: bold;
+   font-size: 20px;
+   width: 12%;
+
+   &:hover {
+     background-color: $color;
+     color: #fff;
+     &:hover img {
+       transform: rotatey(180deg);
+     }
+   }
+}

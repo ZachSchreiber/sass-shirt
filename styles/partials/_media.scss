@@ -1,0 +1,41 @@
+@media only screen and (max-width: 809px) {
+
+ .shirt-item {
+ width: 300px;
+ margin: 10px 5px;
+}
+
+.triangle-shirt {
+ left: 20px;
+}
+
+.triangle-box {
+ left: 20px;
+ top: 58px;
+}
+
+.hidden-list li {
+ margin: 5px 5px 6px 22px;
+}
+
+.shirt-colors li {
+ height: 25px;
+}
+
+}
+
+@media only screen and (max-width: 639px) {
+
+ .shirt-item {
+   width: 325px;
+ }
+
+ .triangle-shirt {
+   left: 22px;
+ }
+
+ .triangle-box {
+   left: 24px;
+ }
+ 
+}
